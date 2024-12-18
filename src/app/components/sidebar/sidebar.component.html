@@ -1,0 +1,26 @@
+<mat-sidenav-container class="app-container">
+	<!-- Sidebar -->
+	<mat-sidenav mode="side" [opened]="isSidebarOpen" (openedChange)="onSidebarStateChange($event)" class="sidebar">
+	  <div class="menu">
+		<!-- Menu Items with Icons and Tooltips -->
+		<button *ngFor="let menuItem of menuItems"
+				mat-icon-button
+				(click)="setContent(menuItem.content)"
+				[ngClass]="{
+				  'active': currentContent === menuItem.content,
+				  'inactive': currentContent !== menuItem.content
+				}"
+				matTooltip="{{menuItem.tooltip}}">
+		  <mat-icon>{{menuItem.icon}}</mat-icon>
+		</button>
+	  </div>
+	</mat-sidenav>
+  
+	<!-- Main Content -->
+	<mat-sidenav-content class="content-display">
+	  <div *ngIf="currentContent === 'home'">Home Content</div>
+	  <div *ngIf="currentContent === 'login'">Login Content</div>
+	  <div *ngIf="currentContent === 'code'">Code Content</div>
+	</mat-sidenav-content>
+  </mat-sidenav-container>
+  
