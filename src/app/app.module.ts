@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';  
+import { HttpClientModule } from '@angular/common/http';
 
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
@@ -43,6 +44,7 @@ import { FooterComponent } from './components/footer/footer.component';
   ],
   imports: [
     AppRoutingModule,
+    HttpClientModule,
     RouterModule,
     FormsModule,
     BrowserModule,
