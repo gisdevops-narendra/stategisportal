@@ -1,0 +1,30 @@
+{
+  "controls": {
+    "mousePosition": {
+      "enabled": true,
+      "projection": "EPSG:4326",
+      "coordinateFormat": "LatLon", 
+      "className": "ol-mouse-position"
+    },
+    "scaleLine": {
+      "enabled": true,
+      "className": "ol-scale-line"
+    },
+    "zoomControl": {
+      "enabled": true,
+      "className": "ol-zoom"
+    },
+    "attribution": {
+      "enabled": false,
+      "className": "ol-attribution"
+    },
+    "fullScreen": {
+      "enabled": true,
+      "className": "ol-full-screen"
+    },
+    "rotate": {
+      "enabled": true,
+      "className": "ol-rotate"
+    }
+  }
+}

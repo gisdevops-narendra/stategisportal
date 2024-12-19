@@ -1,7 +1,7 @@
 
 .footer-toolbar {
     width: 100%;
-    padding: 2px 2px;  
+    padding: 0px 2px;  
     text-align: center;
     justify-content: space-between;
     font-size: 12px;  
@@ -15,3 +15,10 @@
     flex: 1 1 auto;
   }
   
+  #coordinates {
+    font-weight: bold;
+    margin-left: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    letter-spacing: 0.5px;
+}
