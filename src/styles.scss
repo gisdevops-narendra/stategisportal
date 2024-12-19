@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #a8c4d9, #b7e3d0, #e0f7fa); 
+    height: 100vh; 
+    justify-content: center; 
+    align-items: center; 
+    overflow: hidden; 
+    transition: background 0.5s ease-in-out; 
+  }
+  .mat-toolbar.mat-primary {
+    
+    --mat-toolbar-container-text-color: white;
+    background: linear-gradient(135deg, #494949, #333333, #504f4f); 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); 
+  }
+  
